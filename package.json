@@ -1,0 +1,39 @@
+{
+  "name": "my-opal-csharp-tools-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for MyOpalCSharpTools",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:staging": "wrangler deploy --env staging",
+    "deploy:production": "wrangler deploy --env production",
+    "build": "echo 'Build completed'",
+    "test": "echo 'Tests completed'",
+    "lint": "echo 'Linting not configured yet'",
+    "tail": "wrangler tail",
+    "secret:put": "wrangler secret put",
+    "secret:list": "wrangler secret list",
+    "secret:delete": "wrangler secret delete",
+    "whoami": "wrangler whoami",
+    "login": "wrangler login"
+  },
+  "keywords": [
+    "cloudflare-workers",
+    "opal-tools",
+    "csharp",
+    "api"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "wrangler": "^4.36.0"
+  },
+  "dependencies": {
+    "itty-router": "^4.0.23"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

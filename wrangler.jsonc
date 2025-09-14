@@ -1,0 +1,21 @@
+{
+  "name": "opal-demo-vaiwar",
+  "main": "worker.js",
+  "compatibility_date": "2024-01-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "ENVIRONMENT": "development"
+  },
+  "env": {
+    "production": {
+      "name": "opal-demo-vaiwar-prod"
+    },
+    "staging": {
+      "name": "opal-demo-vaiwar-staging"
+    }
+  },
+  "build": {
+    "command": "npm run build",
+    "cwd": "."
+  }
+}

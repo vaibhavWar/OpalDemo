@@ -1,7 +1,7 @@
 # Cloudflare Workers specific files
-worker.js
-wrangler.toml
-package.json
+# worker.js - DO NOT IGNORE - needed for deployment
+# wrangler.toml - DO NOT IGNORE - needed for deployment  
+# package.json - DO NOT IGNORE - needed for deployment
 package-lock.json
 node_modules/
 

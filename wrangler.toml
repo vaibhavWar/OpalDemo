@@ -1,0 +1,46 @@
+name = "opal-demo-vaiwar"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+name = "opal-demo-vaiwar-prod"
+
+[env.staging]
+name = "opal-demo-vaiwar-staging"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "development"
+
+# Secrets (set via wrangler secret put)
+# API_KEY = "your-api-key-here"
+
+# KV Namespaces (if needed)
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "your-kv-namespace-id"
+
+# Durable Objects (if needed)
+# [[durable_objects.bindings]]
+# name = "MY_DURABLE_OBJECT"
+# class_name = "MyDurableObject"
+
+# R2 Buckets (if needed)
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# Cron Triggers (if needed)
+# [[triggers]]
+# crons = ["0 0 * * *"]
+
+# Build configuration
+[build]
+command = "npm run build"
+cwd = "."
+
+# Custom domains (if needed)
+# [[routes]]
+# pattern = "api.yourdomain.com/*"
+# zone_name = "yourdomain.com"
