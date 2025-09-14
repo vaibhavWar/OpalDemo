@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\VaibhavWarhadpande\.nuget\packages\optimizely.cms.opalchat\1.0.0\contentFiles\any\any\modules\_protected\Optimizely.Cms.OpalChat\Optimizely.Cms.OpalChat.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Optimizely.Opal.Tools" Version="0.3.0" />
+    <PackageReference Include="OptimizelyOpal.OpalToolsSDK" Version="0.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="modules\" />
+  </ItemGroup>
+
+</Project>
