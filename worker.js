@@ -56,34 +56,37 @@ router.get('/discovery', () => {
     {
       name: 'hello_world',
       description: 'A simple tool that returns a greeting.',
-      parameters: {
-        type: 'object',
-        properties: {
-          Name: {
-            type: 'string',
-            description: 'The name to greet'
-          },
-          Language: {
-            type: 'string',
-            description: 'The language for the greeting (en, es)',
-            default: 'en'
-          }
+      parameters: [
+        {
+          name: 'Name',
+          type: 'string',
+          description: 'The name to greet',
+          required: true
         },
-        required: ['Name']
-      }
+        {
+          name: 'Language',
+          type: 'string',
+          description: 'The language for the greeting (en, es)',
+          required: false,
+          enum: ['en', 'es']
+        }
+      ],
+      endpoint: '/tools',
+      http_method: 'POST',
+      auth_requirements: []
     },
     {
       name: 'get_current_time',
       description: 'Returns the current UTC time.',
-      parameters: {
-        type: 'object',
-        properties: {}
-      }
+      parameters: [],
+      endpoint: '/tools',
+      http_method: 'POST',
+      auth_requirements: []
     }
   ];
 
   return new Response(JSON.stringify({
-    tools: tools,
+    functions: tools,
     version: '1.0.0'
   }), {
     headers: {
