@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyOpalCSharpTools")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+130ec1ac9507bdd6688909637770afbf9e3b20f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d5183c1fbdacc33bc02a98e258fed79e32c476d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyOpalCSharpTools")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyOpalCSharpTools")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
